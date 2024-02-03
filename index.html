@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/edee7ad215.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fa-solid fa-caret-up"></i>
+    </div>
+    <div id="header">
+        <nav class="navbar">
+            <div class="up-icons">
+                <a href="https://www.linkedin.com/in/kaushlendra-upadhyay-2bb39224a"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kaushlendraU"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/upadhyayrisu/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                    d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,
+                    8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,
+                    5.274,14.725,1.445,10,1.445 M10,
+                    17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,
+                    3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,
+                    7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,
+                    10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,
+                    0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,
+                    9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,
+                    0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,
+                    0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,
+                    12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,
+                    0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,
+                    6.848,14.39,7.051,14.39,7.298">
+                </path>
+            </svg>
+            <ul id="subMenu" class="list">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="header-text">
+            <h1 class="owner-name">Hi, I'm <span class="highlighteds-text">Kaushlendra</span><br>Upadhyay</h1>
+            <p>A Web <span class="typing"></span></p>
+        </div>
+    </div>
+
+    <!-- ----------about---------- -->
+
+    <div class="about-section">
+        <h1 class="main-title">Who Am I</h1>
+        <p>Hi, I am Kaushalendra Upadhyay, I am in third year, fifth semester of my bachelor's degree. i am
+            proficient in html css also know about c++,pythan & in the middle of learning java script. I want to
+            be a full time web developer and i would also like to learn game development and animation
+            designing.</p>
+
+        <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('overskills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="overskills">
+            <ul>
+                <li><span>Web Development</span><br>
+                    Developing Web Pages</li>
+                <li><span>Young Professional</span><br>
+                    Communication Skills │ Presentation
+                    Skills│ Soft Skills │ Career Guidance
+                    Framework │ Resume Writing
+                    │ Group Discussion Skills│ Interview
+                    Skills │ Business Etiquette │ Effective
+                    Email Writing │ Telephone Etiquette │
+                    Accounting Fundamentals │ IT
+                    Foundational Skills │ Overview of
+                    Artificial.</li>
+                <li><span>Digital Marketing</span><br>
+                    Basic Fundamentals of Digital Marketing
+                    Certified by United Latino Students
+                    Association.
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2023 - current</span><br>
+                    Responsive Web Developer certified by
+                    Free code camp.</li>
+                <li><span>2021-2022</span><br>Completed
+                    1st and 2nd year of Bachelor's degree in
+                    Computer Application and also trained my
+                    web development skills at M.L.K PG
+                    College.
+                </li>
+                <li><span>2020 - 2021</span><br>I
+                    started my 12th in 2020 and passed in
+                    2021 with 73%.
+                </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2019</span><br>Completed my
+                    10th from Balrampur Modern Inter College
+                    with 73.16%.
+                </li>
+                <li><span>2021</span><br>Completed my
+                    12th from Balrampur Modern Inter College
+                    with 73%.
+                </li>
+                <li><span>2021</span><br>Started my
+                    Bachelor's degree in Computer
+                    Application and now I'm in 3rd year
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="skills" id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-content">
+            <h2 class="sectcion-info-heading">My creative skills & experiences.</h2>
+            <p class="info-about-skills">I am good at web development and also know how to design the interface of a
+                web, I
+                have 4 to 5
+                months of experience in web development, made 8 to 10 projects by myself certified by free code
+                camp and also know how to use canva,i made lot's of photos,banners,thumbnails etc.</p>
+        </div>
+        <div class="skills-wrap">
+            <div class="bars">
+                <div class="sk-progress">
+                    <svg>
+                        <circle cx="75" cy="75" r="68" />
+                    </svg>
+                    <h2 class="counter">
+                        <span data-target="89">0</span>
+                    </h2>
+                </div>
+                <div class="sk-title">HTML</div>
+            </div>
+            <div class="bars">
+                <div class="sk-progress">
+                    <svg>
+                        <circle cx="75" cy="75" r="68" />
+                    </svg>
+                    <h2 class="counter">
+                        <span data-target="80">0</span>
+                    </h2>
+                </div>
+                <div class="sk-title">CSS</div>
+            </div>
+            <div class="bars">
+                <div class="sk-progress">
+                    <svg>
+                        <circle cx="75" cy="75" r="68" />
+                    </svg>
+                    <h2 class="counter">
+                        <span data-target="60">0</span>
+                    </h2>
+                </div>
+                <div class="sk-title">JS</div>
+            </div>
+            <div class="bars">
+                <div class="sk-progress">
+                    <svg>
+                        <circle cx="75" cy="75" r="68" />
+                    </svg>
+                    <h2 class="counter">
+                        <span data-target="40">0</span>
+                    </h2>
+                </div>
+                <div class="sk-title">C++</div>
+            </div>
+            <div class="bars">
+                <div class="sk-progress">
+                    <svg>
+                        <circle cx="75" cy="75" r="68" />
+                    </svg>
+                    <h2 class="counter">
+                        <span data-target="35">0</span>
+                    </h2>
+                </div>
+                <div class="sk-title">Python</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-line-separator">
+
+    <!-- -----------------Services------------------- -->
+
+    <div id="services">
+        <h1 class="services-secction-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Web Design</h2>
+                <p>I have 4 months of experience in web designing, I designed more then 8 to 10 Web Pages.</p>
+                <a href="https://github.com/kaushlendraU?tab=repositories">lern more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Video Editing</h2>
+                <p>I have 1 year of experience in Video editing, I edited lot's of Videos for my YouTube Channel but for
+                    my personal reasons i have to quit.</p>
+                <a href=" https://m.youtube.com/channel/UCiCdw6z2iuKwhCtMw-8kvQA">lern more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-canadian-maple-leaf"></i>
+                <h2>Canva</h2>
+                <p>I have 1 year of experience, I made banners, edited photos, written resume for myself.</p>
+                <a href="https://drive.google.com/drive/folders/1AoRlpVHqTDnCGkZ0uZLbalxg32veZaqd">
+                    lern more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Portfolio------------------- -->
+
+
+    <div id="portfolio">
+        <h1 class="work-section-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://shorturl.at/mJVXY">
+                <div class="layer">
+                    <h3>Magazine</h3>
+                    <p>This is a assignment that was given to me by free code camp, it's a Magazine about the change
+                        on curriculum in free code camp.</p>
+                    <a href="https://kaushlendrau.github.io/free_code_camp_magazine/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://rb.gy/kkrolq">
+                <div class="layer">
+                    <h3>Tribute Page</h3>
+                    <p>Ajad Bhagat Singh man who sacrificed himself for people of India without a single thought,
+                        the man who gave us freedom.</p>
+                    <a href="https://kaushlendrau.github.io/tribute_page/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://rb.gy/b6eb4p">
+                <div class="layer">
+                    <h3>JS Documentation Page</h3>
+                    <p>Documentation page about java script, It's a page about JS Basics.</p>
+                    <a href="https://kaushlendrau.github.io/Java_documentation/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <button href="https://github.com/kaushlendraU?tab=repositories" class="see-more-btn" target="_blank">See
+            More</button>
+    </div>
+
+    <!-- -----------------contact----------------- -->
+    <div class="contact-section">
+        <h1 class="contact-me-title"> Contact Me</h1>
+        <div id="contact">
+            <div class="contact-me">
+                <div class="details">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="info">
+                        <div class="head">Name</div>
+                        <div class="head-description">Kaushalendra Upadhyay</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info">
+                        <div class="head">Address</div>
+                        <div class="head-description">Uttar pradesh, Balrampur, Tusipark, 271201</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="info">
+                        <div class="head">Email</div>
+                        <div class="head-description"><a href="mailto: harrysaam6@gmail.com">harrysaam6@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <form name="submit-to-google-sheet" onclick="closemenu()">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input type="email" name="Email" placeholder="Your Email" required />
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" id="button" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>©2023 created by Kaushlendra Upadhyay</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

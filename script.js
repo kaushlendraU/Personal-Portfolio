@@ -20,7 +20,7 @@ var showNav = document.querySelector(".list");
 opneNavBtn.addEventListener("click", showNavBar);
 
 function showNavBar() {
-  showNav.classList.toggle('open')
+    showNav.classList.toggle('open')
 }
 
 // for messsege  

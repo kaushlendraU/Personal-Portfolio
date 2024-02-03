@@ -161,9 +161,9 @@ nav ul li a:hover::after {
 
 .tab-title {
   display: flex;
-  gap: 2rem;
   flex-direction: row;
-  margin: 2rem auto;
+  padding: 2rem 0;
+  gap: 1rem;
 }
 
 .tab-links {
@@ -175,11 +175,11 @@ nav ul li a:hover::after {
 .tab-links::after {
   content: "";
   width: 0;
-  height: 3px;
+  height: 0.2rem;
   background: #ff004f;
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -0.5rem;
   transition: 0.5s;
 }
 
@@ -328,21 +328,10 @@ nav ul li a:hover::after {
   font-size: 1rem;
 }
 
-/* for hr */
-
-.hr-line-separator {
-  width: 96vw;
-  height: 9px;
-  border: 1px solid black;
-  border-bottom: none;
-  background-color: lightslategray;
-  margin: 4rem auto;
-}
-
 /*-- -----------------Services------------------- */
 
 #services {
-  margin: 2rem;
+  margin: autuo;
   padding: 1.5rem;
   color: #fff;
 }
@@ -358,39 +347,39 @@ nav ul li a:hover::after {
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3.2rem;
   margin: 2rem auto;
 }
 
 .services-list div {
   background: ghostwhite;
   box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
-  padding: 40px;
+  padding: 2.4rem;
   color: #444444;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 300;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: background 0.5s, transform 0.5s;
   /* box-shadow: 0 0 10px #000; */
 }
 
 .services-list div i {
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .services-list div i {
-  font-size: 50px;
+  font-size: 2.6rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 1rem,;
 }
 
 .services-list div a {
   text-decoration: none;
   color: #444444;
-  font-size: 12px;
-  margin-top: 20px;
+  font-size: 0.9rem;
+  margin-top: 1.3rem;
   display: inline-block;
 }
 
@@ -406,7 +395,7 @@ nav ul li a:hover::after {
 /*  ----------------Portfolio-------------------	 */
 
 #portfolio {
-  margin: 2rem;
+  margin: auto;
   padding: 1.5rem;
   overflow: hidden;
 }
@@ -422,9 +411,9 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 40px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 0 0.3rem #131111;
   border-radius: 15px;
   background-color: rgba(178, 211, 211, 0.788);
@@ -518,7 +507,18 @@ nav ul li a:hover::after {
 /* ------------------Contact------------------*/
 
 .contact-section {
-  margin: 2rem;
+  margin: auto;
+}
+
+.contact-me-title {
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+  border-left: 4px solid #f7345e;
+  padding-left: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 #contact {
@@ -526,17 +526,6 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1.5rem;
   padding: 1.5rem;
-}
-
-.contact-me-title {
-  font-size: 2rem;
-  height: 6vh;
-  font-weight: 500;
-  color: #000;
-  margin-bottom: 1rem;
-  border-left: 4px solid #f7345e;
-  padding-left: 0.5rem;
-  border-radius: 0.2rem;
 }
 
 .contact-me .details {
@@ -636,14 +625,6 @@ form textarea {
 }
 
 @media (max-width: 500px) {
-  .skills {
-    grid-template-columns: 1fr;
-    justify-content: flex-start;
-  }
-
-  .skills-wrap {
-    grid-template-columns: repeat(2, 150px);
-  }
 
   .navbar {
     background-image: none;
@@ -699,5 +680,4 @@ form textarea {
       transform: translateY(0);
   }
   }
- 
 }

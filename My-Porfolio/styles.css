@@ -55,17 +55,42 @@ body {
   margin: auto 0;
 }
 
-.up-icons a i {
+.up-icons a svg {
   color: #31312f;
   transition: all 0.3s ease;
   font-size: 1.6rem;
   text-decoration: none;
 }
 
-.up-icons a i:hover {
-  transform: translateY(-5px);
-  color: #f7345e;
+.social-media {
+  width: 1.5rem;
 }
+
+.social-media path,
+.social-media polygon,
+.social-media rect {
+fill: #383d3f;
+
+}
+
+
+.linkedin:hover {
+  transform: translateY(-5px);
+  filter: invert(0.1) sepia(1) hue-rotate(170deg) saturate(3);
+}
+
+
+.github:hover {
+  transform: translateY(-5px);
+  filter: invert(0.2) sepia(1) hue-rotate(270deg) saturate(0);
+
+}
+
+.insta:hover {
+  transform: translateY(-5px);
+  filter: invert(0.5) sepia(1) hue-rotate(320deg) saturate(3);
+}
+
 
 .svg-icon {
   display: none;

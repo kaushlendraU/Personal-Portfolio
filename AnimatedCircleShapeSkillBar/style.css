@@ -1,6 +1,14 @@
+:root {
+  --hue-1: 257;
+  --hue-2: 47;
+  --main-color-1: hsl(var(--hue-1), 100%, 60%);
+  --bg-color-3: hsl(var(--hue-1), 100%, 98%);
+  --heading-color: hsl(var(--hue-1), 61%, 24%);
+}
+
 .skills-wrap {
   display: grid;
-  height: 46vh;
+  height: auto;
   grid-template-columns: repeat(5, 150px);
   margin-top: 2rem;
   justify-content: space-around;
@@ -32,12 +40,12 @@
   fill: var(--bg-color-3);
   stroke-width: 0.2rem;
   stroke: var(--main-color-1);
-  stroke-dasharray:  427;
+  stroke-dasharray: 427;
   stroke-dashoffset: 427;
 }
 
-@keyframes progress{
-  to{
+@keyframes progress {
+  to {
     stroke-dashoffset: var(--target);
   }
 }

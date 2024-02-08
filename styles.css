@@ -612,7 +612,7 @@ form textarea {
 }
 
 /* ----------------css for small screen---------------*/
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .skills {
     grid-template-columns: 1fr;
     justify-content: flex-start;
